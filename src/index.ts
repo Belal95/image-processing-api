@@ -1,11 +1,18 @@
 import express from 'express';
-const app = express();
-const port = 3000;
+import * as dotenv from 'dotenv';
+import routes from './routes/api';
 
-app.get('/api', (req, res) => {
-  res.send('Hello, wolrd.');
+dotenv.config();
+const app = express();
+const PORT = 3000;
+
+app.use('/api', routes);
+app.get('/', (_req, res) => {
+  res
+    .status(200)
+    .send('Hello, to resizeing app. <br> Please enter /api/resizeImage route');
 });
 
-app.listen(port, () => console.log(`Server started on port ${3000}`));
+app.listen(PORT, () => console.log(`Server started on port ${3000}`));
 
 export default app;

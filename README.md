@@ -15,9 +15,9 @@
 
 ## Available endpoints
 
-- (for home page)[http://localhost:3000/]
-- (for resize page)[http://localhost:3000/api/resizeImage]
-- to resize enter (resize page)[http://localhost:3000/api/resizeImage?fileName=filename&width=width&height=height] then add fileName, width & height to the url querry
+- [for home page](http://localhost:3000/)
+- [for resize page](http://localhost:3000/api/resizeImage)
+- to resize enter [resize page](http://localhost:3000/api/resizeImage?fileName=filename&width=width&height=height) then add fileName, width & height to the url querry
 
 ## Available file names
 
